@@ -1,0 +1,246 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+.banner{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(brown);
+    background-image: url(home-bg1[60].jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width:85%;
+    margin:auto;
+    padding:35px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0%;
+   
+}
+.logo{
+    width:180px;
+    cursor:pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin:0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform:capitalize;
+}
+.navbar ul li::after{
+    content:'';
+    height:3px;
+    width:0;
+    color:black;
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+
+}
+.login-btn{
+    background-color: black;
+    padding:10px; 
+    
+}
+.login-btn:hover{
+    background-color: brown;
+    color:pink;
+    border:1px solid black;
+}
+.content{
+    width:100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:white;
+}
+.content h1{
+    font-size: 90px;
+    margin-top:80px;   
+}
+.content h3{
+    font-size:30px;
+}
+.content p{
+    margin:20px auto;
+    line-height: 25px;
+    font-size:16px;
+}
+.main-card{
+    display:flex;
+    justify-content: space-evenly;
+}
+.inner-card{
+    width:500px;
+}
+
+.list-front1{
+    display: inline-block;
+    margin-left: 100px;
+    list-style: none;
+}
+
+.list-front{
+    display: inline-block;
+    list-style: none;
+}
+.inner-card>h4{
+    margin-top: 25px;
+    font-size:40px;
+   
+}
+.list-front>li{
+    font-size:25px;
+    margin-top:30px;
+    margin-bottom: 50px;
+}
+.list-front1>li{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.img{
+    text-align: center;
+}
+
+.inner-card>p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.para{
+    font-size:20px;
+}
+.main-best-card{
+    display: flex;
+     /* justify-content: end;  */
+    background-color:rgba(255, 255, 0, 0.178);
+    /* justify-content: center; */
+}
+.main-best-card .best-inner{
+    margin-left: 150px;
+}
+.best-inner>h4{
+    font-size:35px;
+    text-transform: capitalize;
+}
+.li{
+    margin-bottom: 50px;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.maincard_price{
+    display:flex;
+    justify-content:space-evenly;
+}
+.price_card{
+    width:400px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pa>h4 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.price_card>p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+h3 {
+    font-size: 30px;
+    margin-left:30px;
+    margin-top:20px;
+    color:brown;
+}
+
+.price_card>ul>li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed rgb(169, 165, 165);
+    list-style: none;
+    text-align: center;
+}
+
+
+.price_card {
+    width: 350px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+button {
+    background-color: brown;
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.pa {
+    padding: 30px;
+}
+.inner{
+    width:500px;
+}
+.inner1{
+    margin-left:15%;
+}
+.main{
+        display:flex;
+        justify-content: space-evenly; 
+}
+.inner>h4{
+    margin-top: 25px;
+    font-size:38px;
+}
+.jaya{
+    width:180px;
+    background-color:brown ;
+    color:white;
+    border:2px solid white;
+    text-transform: capitalize;
+}
+@media screen and(max-width: 500px){
+    .main-card{
+        display:block;  
+    }
+    .inner-card{
+        width:100%;
+    }
+    .navbar>ul{
+        display: none;
+    }
+}
+@media screen and(min-width:768px) {
+    .inner-card{
+        width:180px;
+    }   
+}
+@media screen and(min-width:1024px){
+    .inner-card{
+        width:380px;
+    }
+}
+    
+
+    
+
